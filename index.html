@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leena Goyal | AI/ML Engineer</title>
     <style>
-        /* --- CSS STYLES --- */
         :root {
             --primary: #2A9D8F;
             --bg-color: #121212;
@@ -30,17 +29,16 @@
             
             color: var(--text-main);
             line-height: 1.6;
-            overflow-x: hidden; /* Prevents horizontal scrolling */
+            overflow-x: hidden; 
         }
 
-        /* Animation Keyframes for the background */
+    
         @keyframes gradientBG {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
 
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -310,9 +308,9 @@
 
         /* Home Section - Centered */
         #home {
-            min-height: auto; /* Removed the 100vh constraint */
-            padding-top: 150px; /* Pushes content down so the fixed nav doesn't cover it */
-            padding-bottom: 20px; /* Small bottom gap before About section */
+            min-height: auto;
+            padding-top: 150px; 
+            padding-bottom: 20px; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -382,7 +380,6 @@
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav>
         <div class="logo">Leena.Goyal</div>
         <ul class="nav-links">
@@ -393,7 +390,7 @@
         </ul>
     </nav>
 
-    <!-- Home Section -->
+
     <section id="home">
         <h1>
             Hello, I'm the AI Engineer <br>
@@ -428,7 +425,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>Selected Projects</h2>
         <div class="project-grid" id="project-container">
@@ -477,6 +473,7 @@
                 </div>
             </div>
 
+            <!-- Project 4: Intuitive DSA -->
             <div class="project-card">
                 <h3>Intuitive DSA</h3>
                 <p>A learning platform designed to bridge the gap between theoretical Data Structures and Algorithms (DSA) and real-world applications. It focuses on helping learners build a strong foundational intuition and understand the practical 'why' behind complex problems before they write a single line of code.</p>
@@ -493,7 +490,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-content">
@@ -514,7 +510,6 @@
         </div>
     </section>
 
-    <!-- --- JAVASCRIPT --- -->
     <script>
         // Typing Animation Logic
         const typedTextSpan = document.querySelector(".typed-text");
