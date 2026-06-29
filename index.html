@@ -564,22 +564,6 @@
             if(textArray.length) setTimeout(type, newTextDelay + 250);
         });
 
-        // Simple script to handle form submission gracefully
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = this.querySelector('button');
-            const originalText = btn.innerText;
-            
-            btn.innerText = 'Message Sent!';
-            btn.style.background = '#4CAF50';
-            this.reset();
-
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.background = '';
-            }, 3000);
-        });
-
         // Asynchronous Email Sending Logic
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
